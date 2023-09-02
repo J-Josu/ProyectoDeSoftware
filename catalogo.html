@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Dibujos</title>
+    <style>
+        /* Estilos CSS */
+        .categoria-selector {
+            display: none;
+        }
+
+        .imagenes img {
+            display: none;
+        }
+
+        .categoria-selector:checked + label + .imagenes img {
+            display: block;
+        }
+
+        /* Estilos para grupos de imágenes */
+        .contenedor-perros {
+            border: 2px solid red;
+            margin-bottom: 20px;
+        }
+
+        .contenedor-gatitos {
+            border: 2px solid green;
+            margin-bottom: 20px;
+        }
+
+        .contenedor-pajaros {
+            border: 2px solid blue;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos adicionales */
+        label {
+            cursor: pointer;
+            color: blue;
+        }
+
+        .imagenes {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between; /* Distribución uniforme horizontal */
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        img {
+    padding: 1rem; /* Ajusta el valor del padding según tus preferencias */
+    border: 2px solid navy; /* Ajusta el color y el grosor del borde según tus preferencias */
+}
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Dibujos</h1>
+    
+    <p>Selecciona una categoría para ver dibujos:</p>
+    
+    <div class="contenedor-perros">
+        <input type="radio" id="perros" name="categoria" class="categoria-selector" checked>
+        <label for="perros">Perros</label>
+        
+        <div class="imagenes">
+            <!-- Imágenes de Perros -->
+            <img src="imagenes/perro1.jpeg" alt="Descripción del Perro 1">
+            <img src="imagenes/perro2.jpeg" alt="Descripción del Perro 2">
+        </div>
+    </div>
+
+    <div class="contenedor-gatitos">
+        <input type="radio" id="gatitos" name="categoria" class="categoria-selector">
+        <label for="gatitos">Gatitos</label>
+        
+        <div class="imagenes">
+            <!-- Imágenes de Gatitos -->
+            <img src="imagenes/gatito1.jpeg" alt="Descripción del Gatito 1">
+            <img src="imagenes/gatito2.jpeg" alt="Descripción del Gatito 2">
+        </div>
+    </div>
+
+    <div class="contenedor-pajaros">
+        <input type="radio" id="pajaros" name="categoria" class="categoria-selector">
+        <label for="pajaros">Pájaros</label>
+        
+        <div class="imagenes">
+            <!-- Imágenes de Pájaros -->
+            <img src="imagenes/pajaro1.jpeg" alt="Descripción del Pájaro 1">
+            <img src="imagenes/pajaro2.jpeg" alt="Descripción del Pájaro 2">
+        </div>
+    </div>
+</body>
+</html>

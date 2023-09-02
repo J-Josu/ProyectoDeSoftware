@@ -1,0 +1,72 @@
+/* estilos.css */
+.formulario-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.formulario-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formulario-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario-input,
+.formulario-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario-submit {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* estilosIA.css */
+.index-formulario-container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.index-formulario-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.index-formulario-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.index-formulario-input,
+.index-formulario-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.index-formulario-submit {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

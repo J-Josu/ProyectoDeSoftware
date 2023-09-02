@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #444;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (min-width: 768px) {
+          .navbar {
+            flex-direction: row;
+          }
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .contenido {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .video-selector + label + .video a {
+            display: none;
+        }
+        .video-selector:checked + label + .video a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Página Web</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="#">Inicio</a>
+        <a href="formulario.html">Formulario de Contacto</a>
+        <a href="informacion.html">Información del Auto</a>
+        <a href="catalogo.html">Catálogo de Dibujos</a>
+    </div>
+
+    <div class="contenido">
+        <h2>¡Bienvenido!</h2>
+        <p>Esta es una página de ejemplo con estilos CSS y una barra de navegación.</p>
+        <p>Puedes editar estos estilos y agregar más contenido según tus necesidades.</p>
+    </div>
+
+    
+    <div class="seccion-video">
+      <input type="radio" id="video" name="video" class="video-selector">
+        <label for="video">Perros</label>
+        
+        <div class="video">
+            <a href="youtube.com/video">Video de la entrega</a>
+        </div>
+  </div>
+
+    <footer>
+        &copy; 2023 Mi Página Web
+    </footer>
+</body>
+</html>
